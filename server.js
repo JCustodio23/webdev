@@ -15,7 +15,7 @@ app.get('/', function(req, res){
 app.get('*', function(req, res){
   res.sendFile(path.join(__dirname, 'views/duh.html'));
 });
-app.get('*', function(req, res){
+app.get('/contact', function(req, res){
   res.sendFile(path.join(__dirname, 'views/contact.html'));
 });
 //express server listen
